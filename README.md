@@ -1,4 +1,4 @@
 facebook
 ========
 
-Projeto que visam resolver o problema relacionado a busca de informações no facebook.
+Projeto que visa resolver o problema relacionado a busca de informações no facebook.
