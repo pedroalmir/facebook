@@ -5,9 +5,9 @@ api_version: 1
 threadsafe: no
 
 handlers:
-- url: /(.*\.(gif|png|jpg|ico|js|css))
+- url: /(.*\.(gif|png|jpg|ico|js|css|fonts|woff|tff|ejs))
   static_files: webapp/\1
-  upload: webapp/(.*\.(gif|png|jpg|ico|js|css))
+  upload: webapp/(.*\.(gif|png|jpg|ico|js|css|fonts|woff|tff|ejs))
 
 - url: /robots.txt
   static_files: webapp/robots.txt
@@ -17,6 +17,30 @@ handlers:
 - url: /
   static_files: webapp/index.html
   upload: webapp/index.html
+  
+- url: /facebook
+  static_files: webapp/pages/facebook.html
+  upload: webapp/pages/facebook.html
+  
+- url: /feed
+  static_files: webapp/pages/feed.html
+  upload: webapp/pages/feed.html
+  
+- url: /friends
+  static_files: webapp/pages/friends.html
+  upload: webapp/pages/friends.html
+  
+- url: /apps
+  static_files: webapp/pages/apps.html
+  upload: webapp/pages/apps.html
+  
+- url: /about
+  static_files: webapp/pages/about.html
+  upload: webapp/pages/about.html
+  
+- url: /contact
+  static_files: webapp/pages/contact.html
+  upload: webapp/pages/contact.html
   
 libraries:       
 - name: webapp2
