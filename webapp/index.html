@@ -1,0 +1,52 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>De Olho no Facebook</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Encontre informações no facebook">
+    <meta name="author" content="Pedro Almir">
+
+    <!-- Le styles -->
+    <link href="css/style.css" rel="stylesheet">
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+    
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <link rel="shortcut icon" href="img/favicon.ico">
+  </head>
+
+  <body>
+
+    <div id="indexContent" class="wrapper invisible">    	
+    	<h1>Você consegue encontrar informações facilmente no Facebook?</h1>
+    	<div class="hr"></div>
+    	<div class="answers">
+    		<span class="slogan">
+    			Se a sua resposta for <span class="yes">Sim</span>, então meus parabéns! Você deve ser
+    			uma pessoa bem paciente e possui um mouse com um scroll resistente. xD
+    			<br>
+    			<br>
+    			<br>
+    			Já para os impacientes (como eu), que responderam <span class="no">Não</span>, essa ferramenta
+    			irá tentar solucionar esse problema.
+    		</span>
+		</div>
+		<div class="hr"></div>
+		<div class="login">
+			<div id="fb-root"></div>
+			<fb:login-button size="xlarge" perms="read_stream">
+  				Connect with Facebook
+			</fb:login-button>
+		</div>
+		
+    	<p class="credit">By <a href="https://github.com/pedroalmir">Pedro Almir</a></p>
+    </div>
+  </body>
+</html>
