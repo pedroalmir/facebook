@@ -6,10 +6,10 @@ $(document).ready(function() {
 	window.fbAsyncInit = function() {
 		/* initialize the library with the API key */
 		FB.init({
-			appId 		: '934200506718441', 						 	/* Application ID from the app dashboard */
-			channelUrl 	: 'http://localhost:8080/channel.html', 		/* Channel file for x-domain comms */
-			status 		: true, 										/* Check Facebook Login status */
-			xfbml 		: true, 										/* Look for social plugins on the page */
+			appId 		: '934200506718441', 						 			/* Application ID from the app dashboard */
+			channelUrl 	: 'http://deolhonofacebook.appspot.com/channel.html', 	/* Channel file for x-domain comms */
+			status 		: true, 												/* Check Facebook Login status */
+			xfbml 		: true, 												/* Look for social plugins on the page */
 			cookie 		: true
 		});
 		
@@ -26,9 +26,8 @@ $(document).ready(function() {
 				 * The response object is returned with a status field that lets the app know the current
 				 * login status of the person. In this case, we're handling the situation where they
 				 * have logged in to the app.
-				 * */
-				
-				var path = 'https://www.facebook.com/dialog/oauth?';
+				   
+				   var path = 'https://www.facebook.com/dialog/oauth?';
 			       var queryParams = ['client_id=' + '476917739063173',
 			         'redirect_uri=' + window.location,
 			         'response_type=token',
@@ -36,8 +35,10 @@ $(document).ready(function() {
 			       var query = queryParams.join('&');
 			       var url = path + query;
 			       window.open(url);
+			       
+				 * */
 				
-				if(document.URL.match("facebook")){
+				if(document.URL.match("/facebook")){
 					console.log("Index page");
 				}else if(document.URL.match("feed")){
 					console.log("Feed page");
